@@ -1,0 +1,5 @@
+dependencies:
+  - pip
+  - pip:
+      - pyfdb
+      - earthkit-data
