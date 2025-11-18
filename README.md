@@ -27,3 +27,10 @@ python3 ./find_georef.py
 ```
 python3 ./read_and_write.py
 ```
+
+
+## Example to read data from FDB for a certain date, expver and georef
+
+```
+python3 ./fdb_search.py
+```
