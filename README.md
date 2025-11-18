@@ -1,5 +1,13 @@
 # DEODE fdb examples
-Python fdb usage in DE330
+In the following we give a few examples on howto work with fdb from python.
+
+## Important information about experiment identifiers
+In some of the examples we modify the experiment identifier `expver` as a test. For your own future archiving NEVER pick random expver but please do as below to get a new expver. The general convention is to use numerical identifiers for operations, e.g. 0001, and alpha numerical ones for research, i.e. personal runs. The utility `getNewId` will simply increment to a new id everytime it's called.
+
+```
+module load pifsenv
+getNewId -g d1.on-demand-extremes-dt
+```
 
 ## Install
 

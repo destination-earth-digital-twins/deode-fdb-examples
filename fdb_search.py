@@ -29,6 +29,7 @@ def get_data(date, georef, param=None, step=None):
     if step is not None:
         request2 = request1.copy()
         request1["step"] = step
+        # Make sure we include accumulated fields
         request2["step"] = f"0-{step}"
         requests = [ request1, request2 ]
 
@@ -54,7 +55,8 @@ def main():
 
     check_fdb_env()
     get_data(date=20241119, georef="ud3q9t", param=[134,144,151,165,166,167,168,169,175,228164,228228,260046],step=1)
-    get_data(date=20241119, georef="ud3q9t", step=2)
+    get_data(date=20241119, georef="ud3q9t", step=[2,3])
+    #get_data(date=20241119, georef="ud3q9t")
 
 
 if __name__ == "__main__":
